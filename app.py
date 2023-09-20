@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 import streamlit as st
 from PyPDF2 import PdfReader
 from gpt import get_gpt_response
