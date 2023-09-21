@@ -1,6 +1,7 @@
 # Build A Resume Reviewer App With ChatGPT
 
 ![](imgs/resume_robot.png)
+<center>Image created with <i>Stable D.</i></center>
 
 We can easily create an app that can review the resumes
 you get in your inbox, so that you are able to save time and improve your decisions.
@@ -175,7 +176,7 @@ We will do that by using Function Calling, which is a way to extract structured 
 
 We need to lay out everything in the function calling object so that
 GPT knows exactly what to extract. This piece of code shows how to extract 3 of the 8 points we mentioned earlier. You can
-find the complete list in Github.
+find the complete list in `gpt.py`.
 
 ```python
 function_descriptions = [
@@ -283,7 +284,7 @@ if file is not None and len(job_description) > 100:
             disabled=True
         )
 ```
-Again, to keep the article shorter we have omitted the rest of the code. Please check the code on Github.
+Again, to keep the article shorter we have omitted the rest of the code. Please check the code on `app.py`.
 
 Before the code is able to work, we need to add the `openai_api_key` to our environment variable list.
 We can do that by creating a `.env` file and inserting the key as
@@ -302,7 +303,7 @@ load_dotenv(dotenv_path=env_path)
 
 Then, we have everything ready to test our application!
 Just update the page you opened before in your browser, 
-or, ff you haven't already, run the following command
+or, if you haven't already, run the following command
 in your terminal:
 
     streamlit run app.py
